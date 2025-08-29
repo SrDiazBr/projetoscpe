@@ -3,6 +3,5 @@
 #include <iostream>
 int main() {
     std::cout<< "Ola Mundo!\n";
-    system("Pause");
     return 0;
 }
