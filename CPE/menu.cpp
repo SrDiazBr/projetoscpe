@@ -26,10 +26,35 @@ int main(){
                 break;
             case 2:
                 cout << "Procurar produto"<<endl;
+                int cod_produto;
+                cout<<"Digite o codigo do produto que deseja procurar: "<<endl;
+                cin>>cod_produto;
+                for (int j=0;j<i;j++){
+                    if (codproduto[j]==cod_produto){
+                        cout<<"Produto encontrado!"<<endl;
+                        cout<<"Codigo: "<<codproduto[j]<<endl;
+                        cout<<"Nome: "<<nomeproduto[j]<<endl;
+                    }
+                    else {
+                        cout<<"Produto nao encontrado!"<<endl;
+                    }
+                }
                 // Aqui pode adicionar lógica de busca se quiser
                 break;
             case 3:
                 cout << "Apagar produto"<<endl;
+                int apaga;
+                cout<<"Digite o codigo do produto que deseja apagar: "<<endl;
+                cin>>apaga;
+                for ( int j=0;j<i;j++){
+                    if(apaga==codproduto[j]){
+                        cout<<"Produto apagado!"<<endl;
+                        // Lógica simples para "apagar" o produto
+                        codproduto[j]=0;
+                        nomeproduto[j]="";
+                    }
+                    
+                }
                 // Aqui pode adicionar lógica de apagar se quiser
                 break;
             case 4:
